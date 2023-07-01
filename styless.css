@@ -1,0 +1,286 @@
+
+:root {
+    /* bg colors */
+--backhero: #000000 ;
+--background: #f4f4f7;
+--primary: #929292fa;
+--secondary: #272d37;
+--btn-lg: #010d31;
+--boton-2: #5a0303;
+--btc: #f7bc19;
+--textologo: #010d31;
+
+
+/* Text Colors */
+
+--text-gray: #0004ff;
+--nav-bg: #f7f8fa;
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+    background: var(--background)
+}
+
+/* Header */
+
+header {
+    background: var(--primary);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 20px;
+   height: 60px;
+   position: fixed;
+   width: 100%;
+}
+
+/* IMAGENES */
+.imgbtc {
+    margin-top: 10px;
+    background-color: var(--btn-lg);
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 360px;
+
+}
+
+.finanzas {
+   background: var(--btn-lg);
+    margin-top: 10px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 250px;
+}
+
+.Logo {
+    width: 60px;
+    height: 60px;
+}
+
+
+.navbar,
+.navbar-list {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 5rem;
+
+}
+.navbar-list {
+    gap: 1rem;
+}
+
+.navbar-list a {
+    font-size: 14px;
+    color: var(--text-gray)
+}
+
+.navbar-list li:first-child {
+    font-weight: 600;
+    color: var(--text-gray);
+}
+
+.navbar-list .active {
+    font-weight: 600;
+    color: var(--btn-lg);
+}
+
+/* ==============HERO SECTION============ */
+main { 
+    background: var(--btn-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+#hero {
+    max-width: 1200px;
+    margin-top: 60px;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    font-weight: 800;
+    width: 80%;
+    min-width: 500px;
+}
+
+.hero-info p {
+    font-size: 14px ;
+    width: 70%;
+    color: var(--background);
+}
+
+
+.hero-info span {
+    font-weight: 800;
+    text-transform: uppercase;
+   
+}
+
+/* Textos */
+
+   
+
+#info h2 {
+    margin-top: 90px;
+    background: var(--primary);
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 800;
+    gap: 20px;
+}
+
+#infocripto h2 {
+    background: var(--primary);
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.info-btc {
+    background: var(--backhero);
+    overflow: auto;
+    color: var(--nav-bg);
+    justify-content: center;
+    align-items: baseline;
+    max-width: 1000px;
+    padding: 15px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quienessomos {
+    background: var(--backhero);
+    overflow: auto;
+    color: var(--nav-bg);
+    justify-content: center;
+    align-items: baseline;
+    max-width: 1000px;
+    padding: 15px 15px;
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+.hero-info a {
+    color: var(--nav-bg);
+   
+    width: fit-content;
+    padding: 10px 52px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px; 
+   }
+   
+
+   .boton1 {
+    background: var(--secondary);
+   }
+   .boton2 {
+    background: var(--boton-2);
+   }
+    
+
+
+
+
+/* Hero cards */
+
+
+
+.hero-card {
+    background-color: var(--backhero);
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-card-info {
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-card-top  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-card-top h3 {
+font-weight: 600;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+
+.hero-card-top span {
+ background: var(--text-gray);
+ border-radius: 10px;
+ padding: 9px;
+ width: 60px;
+ font-size: 17px;
+ 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caprasimo&family=Lobster&display=swap');
+
+
